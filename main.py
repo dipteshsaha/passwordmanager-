@@ -21,7 +21,7 @@ class PasswordManager(BasePasswordManager):
             if self.old_passwords[-1].isalpha() or self.old_passwords[-1].isdigit():
                 print('Before level 0')
                 print('level 0')
-            elif self.old_password[-1].isalnum():
+            elif self.old_passwords[-1].isalnum():
                 print('level 1')
             else:
                 print('level 2')
@@ -48,7 +48,7 @@ class PasswordManager(BasePasswordManager):
                 print('\nPassword Not Set!Required a password of higher level than you previous password.')
         print('\nNew Password Set!')
         self.old_passwords.append(k)
-x = ['1365357', '2134sijph', 'Diptesh']
+x = ['1365357', "diptesh12345", 'Diptesh']
 current = PasswordManager(x)
 a=input('Type your password:')
 current.is_correct(a)
